@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* Top */
+
+@media (min-width: 768px){
+    
+}
+
+@media (max-width: 767px){
+    
+}
+
+/* Portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+
+}
+
+/* Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* Archive */
+.archive{
+    margin: 90px auto;
+    max-width: 747px;
+}
+.vol:not(:last-of-type){
+    margin-bottom: 120px;
+}
+.vol__title{
+    font-weight: bold;
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+.vol-group__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vol-group__img li{
+    list-style: none;
+    width: 47.792%;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px){
+    .vol:not(:last-of-type){
+        margin-bottom: 70px;
+    }
+    .vol-group__img li{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .vol__title{
+        font-size: 2rem;
+    }
+}
