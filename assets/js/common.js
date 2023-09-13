@@ -35,23 +35,6 @@ $(document).ready(function () {
     }
 });
 
-// Menu
-$(function(){
-    $open=false;
-    
-	function menuMb() {
-		$(".menu").slideToggle();
-		if($open==false){
-			$open=true;
-		}else{
-			$open=false;
-		}
-	}
-    
-	$('.btn-menu').on('click',function() {
-		menuMb();
-	});
-});
 
 
 
@@ -60,16 +43,26 @@ $(function(){
     function menuMb() {
         if($open==false){
             $open=true;
-            $('.btn-bar').addClass('isActive');
-            $(".list-menu").fadeIn();
+            $('.menu__icon').addClass('isActiveMenu');
+            $(".menu__nav").fadeIn();
         }else{
             $open=false;
-            $('.btn-bar').removeClass('isActive');
-            $(".list-menu").fadeOut();
+            $('.menu__icon').removeClass('isActiveMenu');
+            $(".menu__nav").fadeOut();
         }
     }
     
-    $('.btn-bar').on('click',function() {
+    $('.menu__icon').on('click',function() {
         menuMb();
     });
+    $('.menu li a').on('click',function() {
+        menuMb();
+    });
+
 });
+
+const blurHeader = () =>{
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)

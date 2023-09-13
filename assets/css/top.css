@@ -5,58 +5,61 @@
     padding: 45px 0 80px;
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-end; */
+    align-items: flex-end;
 }
 .vol3__inner{
     width: calc(100% - 341px);
 }
 .vol3__title{
-    font-size: 2rem;
+    font-size: min(2.5vw, 2.4rem);
     font-weight: 500;
 }
 .vol3__img{
     width: 321px;
 }
 .vol__name{
-    font-size: 3.8rem;
+    font-size: min(4vw, 4.8rem);
+
     font-weight: bold;
     line-height: 1.6;
 }
 .vol3 table{
     margin: 5px 0 20px 0;
+    font-size: 2rem;
+    font-weight: 500;
 }
 .vol3 table tr td:nth-child(1){
     text-align: right;
     padding-right: 13px;
 }
 .vol__desc{
-    font-size: 1.8rem;
+    font-size: min(2vw, 2rem);
+
     line-height: 2;
     font-family: 'Noto Serif JP', serif;
     font-weight: 500;
 }
 .vol__note{
+    font-size: 1.6rem;
     margin: 15px 0 0 0;
+    font-weight: 500;
 }
 .vol__time{
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: min(3vw, 3.6rem);
     margin-top: 30px;
+    line-height: 1.5;
 }
 .vol__time .year{
-    font-size: 2.2rem;
+    font-size: min(2.5vw, 2.7rem);
 }
-.vol__time .week{
-    font-size: 1.4rem;
+.vol__time .day{
+    font-size: min(1.5vw, 1.6rem);
 }
 @media screen and (max-width: 768px) {
     .vol3-box{
         padding: 0 0 45px 0;
         flex-direction: column;
-    }
-    .vol3__img{
-        width: 100%;
-        order: -1;
     }
     .wrap.vol3{
         width: 100%;
@@ -68,15 +71,274 @@
     .vol__desc{
         font-size: 1.6rem;
     }
+    .vol3 table{
+        font-size: 1.6rem;
+    }
+    .vol3__title {
+        font-size: min(5.5vw, 2.4rem);
+    }
+    .vol__name {
+        font-size: min(8vw, 4.8rem);
+    }
+    .vol__note{
+        font-size: 1.4rem;
+    }
 }
 /* Vol */
-
-/* Portrait */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-
+/*start ticket-price */
+.bg--gray{
+    background: #f2f2f2;
 }
+.ticket-price{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 75px;
+}
+.ticket-price__subtitle{
+    font-size: min(2.5vw, 3rem);
+    font-weight: bold;
+}
+.ticket-price__title{
+    font-size: min(2.5vw, 3rem);
+    font-weight: bold;
+}
+.ticket-price__title span{
+    font-weight: 500;
+    font-size: min(2vw, 2.6rem);
+}
+.ticket-price__book{
+    display: flex;
+    justify-content: space-between;
+    width: 42.58%;
+}
+.ticket-price__book .btn-book{
+    max-width: 397px;
+    padding: 0.6em 0;
+}
+.ticket-price__book .btn-book span{
+    margin-right: 1vw;
+    font-size: min(2vw, 2.5rem);
+}
+.ticket-price__qr{
+    width: 64px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+    .ticket-price__inner{
+        width: 100%;
+    }
+    .ticket-price__subtitle{
+        font-size: min(6vw, 2.5rem);
+    }
+    .ticket-price__title{
+        font-size: min(6.5vw, 3rem);
+        margin-left: 1em;
+    }
+    .ticket-price__title span{
+        font-size: min(5vw, 2.2rem);
+    }
+    .ticket-price {
+        padding: 20px 0;
+        margin-bottom: 45px;
+    }
+}
+/*end ticket-price */
 
-/* Landscape */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+/*start Staff */
+.staff{
+    margin-bottom: 80px;
+}
+.staff__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.staff__content{
+    width: 240px;
+}
+.staff__list{
+    width: calc(100% - 270px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.staff__list li{
+    width: 24.5162%;
+}
+.staff__title{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.staff__desc{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.staff__desc span{
+    font-size: 2rem;
+}
+.staff-item:not(:last-of-type){
+    margin-bottom: min(6vw, 45px);
+}
+@media screen and (max-width: 768px) {
+    .staff{
+        margin-bottom: 40px;
+    }
+    .staff__inner{
+        flex-direction: column;
+    }
+    .staff__content{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .staff__list{
+        width: 100%;
+    }
+    .staff__list li{
+        padding: 5px 5px 0 0;
+        width: 50%;
+    }
+    .staff__list li:nth-child(2n + 2){
+        padding-right: 0;
+    }
+    .staff__list li img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .staff__desc{
+        font-size: min(4vw, 1.8rem);
+    }
+    .staff__desc span {
+        font-size: min(4.5vw, 2rem);
+    }
+}
+/*end Staff */
+/* Contact */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: min(7vw, 100px);
+}
+.contact__time{
+    width: 39.417%;
+}
+.contact__inner{
+    display: flex;
+    justify-content: space-between;
+    width: 54.167%;
+}
+.contact__map{
+    width: 48%;
+}
+.contact__content{
+    width: 52%;
+    padding-left: 25px;
+}
+.contact__title{
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.contact__desc{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.contact__desc span{
+    font-size: 1.2rem;
+}
+.contact__note{
+    font-size: 1.2rem;
+}
+.contact__caption{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.text--indent{
+    font-size: 1.2rem;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+.caption{
+    padding-left: 1em;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 968px) {
+    .contact__time{
+        width: fit-content;
+        padding-right: 20px;
+    }
+    .contact__inner{
+        flex-direction: column;
+        width: fit-content;
+    }
+    
+    .contact__map{
+        width: 100%;
+        text-align: left;
+    }
 
+    .contact__content{
+        width: 100%;
+        padding-left: 0;
+        margin: 20px 0 0 0;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact{
+        flex-direction: column;
+    }
+    .contact__time{
+        width: 100%;
+        padding-right: 0;
+    }
+    .table-time{
+        text-align: left;
+    }
+    .table-time img{
+        /* width: 100%; */
+    }
+    .contact__inner{
+        margin-top: 20px;
+    }
+    .contact__desc{
+        font-size: 1.4rem;
+    }
+    .contact__inner{
+        width: 100%;
+    }
+}
+/* Contact */
+
+
+.info{
+    text-align: center;
+    padding: 6px 0;
+    background: #000000;
+}
+.info__title{
+    color: #ffffff;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.info__title span{
+    font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .info{
+        margin-bottom: 40px;
+        padding: 10px 20px 20px 20px;
+        text-align: left;
+    }
+    .info__title{
+        font-size: min(5.5vw, 2.2rem);
+        line-height: 1.5;
+    }
+    .info__title span{
+        font-size: min(4vw, 2rem);
+    }
 }

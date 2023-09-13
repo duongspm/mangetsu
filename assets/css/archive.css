@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Archive */
 .archive{
-    margin: 90px auto;
+    margin: 45px auto 90px;
     max-width: 747px;
 }
 .vol:not(:last-of-type){
@@ -9,9 +9,13 @@
 }
 .vol__title{
     font-weight: bold;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     padding-bottom: 10px;
     line-height: 1.5;
+}
+.vol__desc{
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 .vol-group__img{
     display: flex;
@@ -34,6 +38,12 @@
         text-align: center;
     }
     .vol__title{
-        font-size: 2rem;
+        font-size: 2.4rem;
+    }
+    .vol__desc{
+        font-size: 1.4rem;
+    }
+    .archive{
+        margin-top: 30px;
     }
 }

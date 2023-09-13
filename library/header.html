@@ -1,20 +1,29 @@
-<header>
-    <h1 class="logo">
-        <a href="{$root}">
-            <img src="{$root}/assets/img/common/logo.svg" alt="logo" width="137" height="52">
-        </a>
-    </h1>
-    <nav>
-        <ul class="menu">
-            <li>
-                <a class="top" href="{$root}">ホーム</a>
-            </li>
-            <li>
-                <a href="{$root}archive/">過去の公演</a>
-            </li>
-            <li>
-                <a href="{$root}profile/">プロフィール</a>
-            </li>
-        </ul>
-    </nav>
+<header id="header">
+    <div class="nav__bar">
+        <h1 class="logo">
+            <a href="{$root}">
+                <img src="{$root}assets/img/common/logo.svg" alt="なないろ" width="137" height="52">
+            </a>
+        </h1>
+        <nav class="menu__nav">
+            <ul class="menu">
+                <li>
+                    <a class="top" href="{$root}">ホーム</a>
+                </li>
+                <li>
+                    <a href="{$root}archive/">過去の公演</a>
+                </li>
+                <li>
+                    <a href="{$root}profile/">プロフィール</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-menu">
+            <a class="menu__icon" href="#">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>  
+        </div>
+    </div>
 </header>
